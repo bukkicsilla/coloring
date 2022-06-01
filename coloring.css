@@ -1,0 +1,63 @@
+body{
+  text-align: center;
+  background-color: hsl(280, 100%, 85%);
+  font-family: "Open-Sans", sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  color: rgb(140, 26, 255);
+}
+#start-btn{
+  font:inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(140, 26, 255);
+  border: 1px solid rgb(140, 26, 255);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+#start-btn:hover{
+  background-color: rgb(69, 90, 190);
+  border-color: rgb(69, 90, 190);
+}
+#coloring{
+  display: none;
+}
+#color-board {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(4, 5rem);
+  justify-content: center;
+  gap: 0.1rem;
+  
+}
+#color-board li{
+  border: 1px solid blue;
+  //background-color: white;
+  cursor: pointer;
+}
+/*#color-board li:hover{
+  background-color: gold;
+}*/
+
+.gold:hover{
+  background-color: gold;
+
+}
+.blue:hover{
+  background-color: blue;
+}
+.red:hover{
+  background-color: red;
+}
+.green:hover{
+  background-color: green;
+}
+
+#color-board li.disabled{
+  opacity: 84%;
+  cursor: default;
+}
